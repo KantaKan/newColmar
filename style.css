@@ -200,7 +200,6 @@ header .logo{
 .lastbox{
     display: flex;
     flex-direction: row;
-    
 }
 .lastbox_container{
     display: flex;
