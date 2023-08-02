@@ -1,26 +1,224 @@
+
 html{
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
+.herbtn{
+    background-color: #c4c6c4; 
+    border: none;
+    color: white;
+    padding: 2rem 6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 strong{
     font-weight: bold;
 }
-a{
+/* a{
     text-decoration: none;
     color: inherit;
-}
-h3{
+} */
+h2{
     padding-bottom: 1rem;
-    text-align: center;
     font-weight: bold;
     font-size: 2rem;
-}
-h3{
     font-weight: bold;
 }
+
+
 ul{
     list-style-type: none;
 }
 .mobile{
     display: none;
+}
+
+header .desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+header li{
+    display: inline;
+    padding-right: 1rem;
+}
+  
+header li:last-child {
+    padding-right: 0;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    background-color: rgb(182, 180, 180);
+}
+  
+.heroimg {
+    flex: 60%;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+.banner_textbox {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_textbox h2{
+    font-size: 3.4rem;
+}
+.banner_textbox p{
+    font-size: 1.5rem;
+}
+
+.contentbig{
+    display: flex;
+    flex-direction: row;
+}
+.main_content{
+    display: flex;
+    flex: 60%;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+
+}
+.contentsupport{
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    padding-top: 16px;
+
+    
+}
+.contentsupport a{
+    color: aqua;
+
+}
+.content_card{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 16px;
+    justify-content: space-between;
+}
+.contentimg {
+    width: 35%;
+    height: auto;
+}
+.textcard{
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+    width: 65%;
+    text-align: left;
+
+
+}
+.textcard h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.textcard p{
+    font-size: 1rem;
+}
+.main_content h2{
+    padding-bottom: 24px;
+    
+
+}
+
+/* course */
+
+/* CSS for the course cards */
+.course {
+    text-align: center;
+    padding: 2rem 3.5rem;
+    background-color: rgb(182, 180, 180);
+}
+
+.course h2 {
+    margin-bottom: 1rem; /* Optional: Add some spacing below the heading */
+}
+
+.course a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.bigcourse {
+    display: flex;
+    flex-direction: column;
+    margin: 72px;
+}
+
+.courserow1,
+.courserow2 {
+    display: flex;
+    flex-direction: row;
+    padding 32px;
+    background-color: white;
+  }
+
+.smallcourse {
+    padding-bottom: 16px;
+    margin: auto;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 0.1px;
+    text-align: left; 
+}
+.smallcourse img {
+    width: 100%;
+    height: auto;
+}
+
+.lastbox{
+    display: flex;
+    flex-direction: row;
+    
+}
+.lastbox_container{
+    display: flex;
+    flex-direction: row;
+}
+.lastbox_container1{
+    display: flex;
+    flex: 60%;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+
+}
+.lastbox_container1 video{
+    width: 100%;
+}
+.lastbox_card{
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    padding-top: 32px;
+}
+.cardbox2{
+    display: flex;
+    flex-direction: row;
 }
