@@ -14,6 +14,7 @@ html{
     display: inline-block;
     font-size: 16px;
 }
+
 strong{
     font-weight: bold;
 }
@@ -31,6 +32,11 @@ h2{
 
 ul{
     list-style-type: none;
+
+}
+ul a{
+    text-decoration: none;
+    color: inherit;
 }
 .mobile{
     display: none;
@@ -144,52 +150,53 @@ header .logo{
 
 }
 
-/* course */
-
-/* CSS for the course cards */
-.course {
-    text-align: center;
-    padding: 2rem 3.5rem;
-    background-color: rgb(182, 180, 180);
-}
-
-.course h2 {
-    margin-bottom: 1rem; /* Optional: Add some spacing below the heading */
-}
-
-.course a {
-    text-decoration: none;
-    color: inherit;
-
-}
-
-.bigcourse {
-    display: flex;
-    flex-direction: column;
-    margin: 72px;
-}
-
-.courserow1,
-.courserow2 {
-    display: flex;
-    flex-direction: row;
-    padding 32px;
-    background-color: white;
-  }
-
-.smallcourse {
+#learning {
     padding-bottom: 16px;
-    margin: auto;
-    background-color: #fff; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    border-radius: 0.1px;
-    text-align: left; 
-}
-.smallcourse img {
+    background-color: #c4c6c4;
+  }
+  
+#learning h1 {
+    font-size: 2rem;
+    padding: 32px 0 16px 0;
+    text-align: center;
+  }
+  
+#learning h2 {
+    font-size: 1.5rem;
+    margin: 16px 0;
+  }
+  
+#learning h3 {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  
+.holder-courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+  }
+  
+.holder-course {
+    width: 30%;
+    margin: 16px;
+    padding-bottom: 24px;
+  }
+  
+.holder-course-txt {
+    padding: 16px 16px;
+  }
+  
+.holder-course-img {
     width: 100%;
     height: auto;
-}
-
+  }
+  
+.course-img {
+    width: 100%;
+    height: auto;
+  }
 .lastbox{
     display: flex;
     flex-direction: row;
@@ -221,4 +228,41 @@ header .logo{
 .cardbox2{
     display: flex;
     flex-direction: row;
+}
+footer{
+    background-color: white;
+    border-top: 1px solid #01161E;
+    display: flex;
+    justify-content: space-between;
+    position:relative;    
+    top: 4rem;
+    width: 100%;
+    padding-left: 16px;
+}
+@media screen and (max-width:768px){
+    .desktop{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo img {
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mobile img{
+        width: 29px;
+    }
+
+    .desktop span, .desktop ul ,.logo{
+        display: none;
+    }
+    .desktop{
+        display: none;
+        
+    }
 }
